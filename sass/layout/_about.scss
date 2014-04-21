@@ -1,0 +1,49 @@
+// grid
+
+.about-text {
+  float: left;
+  width: span(6);
+  // margin-left: span(1) + gutter();
+  // margin-right: gutter();
+}
+
+.us {
+  float: right;
+  width: span(6);
+  margin-left: gutter();
+  margin-bottom: 100px;
+  a {
+    width: span(2 of 6);
+    margin-right: gutter();
+  }
+}
+
+// detail
+.about-text {
+  text-align: left;
+}
+
+.us-row-1 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:1000px) {
+  h2 {
+    margin: 20px 0 10px;
+  }
+  .about-text {
+    width: span(12);
+    h3 {
+      width: span(6)+gutter()*2;
+      margin: 10px auto;
+    }
+    p {
+      width: span(6)+gutter()*2;
+      margin: 5px auto;
+    }
+  }
+  .us {
+    width: span(12);
+    margin-top: 30px;
+  }
+}

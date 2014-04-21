@@ -1,0 +1,77 @@
+$type-serif : 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+$type-sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+%color-header-1 {
+  color: #fff;
+}
+
+%color-header-2 {
+  color: $color-heading;
+}
+
+%font-size-header-2 {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+%heading-upper {
+  text-transform: uppercase;
+}
+
+html { 
+  font-size: 62.5%;
+} 
+
+body {
+  font-family: $type-sans;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+h1 {
+  @extend %color-header-1, %heading-upper;
+  font-size: 64px;
+  font-size: 6.4rem;
+}
+
+h2 {
+  @extend %color-header-2, %font-size-header-2, %heading-upper;
+}
+
+h3 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: $color-h3;
+}
+
+.subheading {
+  @extend %color-header-1, %font-size-header-2;
+  font-family: $type-serif;
+  font-style: italic;
+}
+
+/* .carousel-nav i {
+  font-size: 36px;
+  font-size: 3.6rem;
+} */
+
+.slider-nav i {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+.contact-form button.send {
+  font-size: 24px;
+  font-size: 2.4rem;
+  i {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+
+.social i, .btt i {
+  font-size: 32px;
+  font-size: 3.2rem;
+}

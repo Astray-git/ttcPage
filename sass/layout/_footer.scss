@@ -1,0 +1,49 @@
+footer {
+  position: relative;
+  height: 100px;
+}
+
+.social {
+  float: left;
+  margin-top: 50px;
+  li{
+    margin-right: 8px;
+  }
+  a {
+    color: #afafaf;
+  }
+}
+
+#twitter:hover {
+  color: $twitter;
+}
+#facebook:hover {
+  color: $facebook;
+}
+#gplus:hover {
+  color: $gplus;
+}
+#pinterest:hover {
+  color: $pinterest;
+}
+#dribbble:hover {
+ color: $dribbble;
+}
+
+footer span {
+  float: right;
+  margin: 83px 10px 0 0;
+  font-size: 12px;
+}
+
+.btt{
+  float: right;
+  margin-top: 35px;
+  width: 65px;
+  height: 65px;
+  color: #fff;
+  background-color: $color-hover;
+  i {
+    margin-top: 18px;
+  }
+}

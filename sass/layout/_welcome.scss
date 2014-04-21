@@ -1,0 +1,29 @@
+.welcome {
+  height: 650px;
+  background: url(../images/welcome@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  white-space: nowrap; /* Prevents stacking in FF/IE9 in narrower desktop views*/
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal; /* Set white-space back to normal. */
+}
+
+h1{
+  margin: 0 0 30px;
+}
+
+.subheading {
+  margin: 0;
+}

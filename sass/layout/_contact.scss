@@ -1,0 +1,80 @@
+
+%form-items {
+  display: block;
+  width: 90%;
+  background-color: $color-bg-contact;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 25px;
+  // &::-webkit-input-placeholder {
+  //   padding-left: 20px;
+  // }
+  // &:-moz-placeholder { /* Firefox 18- */
+  //   padding-left: 20px;
+  // }
+  // &::-moz-placeholder {  /* Firefox 19+ */
+  //   padding-left: 20px;
+  // }
+  // &:-ms-input-placeholder {  
+  //   padding-left: 20px;
+  // }
+}
+
+.map {
+  width: span(7);
+  height: 650px;
+  margin-right: gutter();
+  background-color: $color-bg-contact;
+}
+
+.contact-form {
+  float: right;
+  width: span(5);
+  margin-left: gutter();
+
+  h2 {
+    margin: 25px auto;
+  }
+  input {
+    @extend %form-items;
+    height: 75px;
+    padding: 0 20px;
+  }
+  textarea {
+    @extend %form-items;
+    height: 200px;
+    padding: 20px;
+  }
+  .send {
+    @extend input;
+    float: right;
+    width: (40% - gutter());
+    color: #fff;
+    background-color: $color-highlight;
+    margin-bottom: 0;
+    line-height: 24px;
+    span {
+      display: inline-block;
+      color: $color-highlight;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    display: none;
+  }
+  .contact-form {
+    float: none;
+    width: span(8);
+    margin: 0 auto;
+    .send {
+      float: none;
+    }
+  }
+}

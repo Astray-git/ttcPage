@@ -1,0 +1,15 @@
+$susy: (
+  columns: 12,
+  gutter-position: after,
+  math: fluid,
+);
+
+.container {
+  @include container(768px);
+}
+
+@include susy-breakpoint(769px, 12) {
+  .container {
+    @include container(1000px);
+  }
+}
